@@ -5,11 +5,12 @@
  * [1,150]              [1,3,5,7,9,11...147,149]
  * 
  */
-
-// Entrada
-var range = [1, 150]
-
-var impares = []
-
-
-console.log(impares)
+ let range = 151
+ let contador = 1
+ 
+ while (contador < 151 && contador > 0){
+     if (contador % 2 != 0){
+         console.log(contador)
+     }
+     contador++
+ }

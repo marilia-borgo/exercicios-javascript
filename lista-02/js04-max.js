@@ -7,10 +7,14 @@
  * [40,1,1,0,-10]       40
  */
 
-// Entrada
-var entrada = [1,1,40]
 
-var maior = 0
-
-
-console.log(maior)
+ let entrada = [98,34,65,789]
+ let maiorNumero = 0
+ 
+ for (var numero of entrada){
+     if (numero > maiorNumero){
+         maiorNumero = numero
+     }
+ }
+ console.log(maiorNumero)
+ 
