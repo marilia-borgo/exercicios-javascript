@@ -23,11 +23,22 @@
  * - Não usar bibliotecas, basta manipular a string de entrada de forma a embaralhá-la
  */
 
-// Entrada
-var texto = 'abacate'
+var texto = 'zebra'
+    contador = 0
+    criptografado= ''
 
-// implemente aqui uma lógica para criptografar o texto
-
-var textoCripto = 'bcbduf'
-
-console.log(textoCripto)
+for (var indice in texto){
+    letraNumero = texto.charCodeAt(contador) +1
+    contador ++
+    
+    if (letraNumero == 123){
+        criptografado += '@'
+    }
+    else if (letraNumero == 91){
+        criptografado += '$'
+    }
+    else{
+        criptografado += String.fromCharCode(letraNumero)
+    }
+}
+console.log(criptografado)
