@@ -14,10 +14,13 @@
  * Se a entrada for fora de 1 e 10, podemos imprimir: entrada inválida
  * gere um array com os valores da tabuada, separando assim os dados da exibição
  */
-
-// Entrada
-var entrada = 5
-
-var tabuada = [5, 10, 15]
-
-console.log(tabuada)
+ let entrada = 9
+ let contador = 1
+ let multiplicacao, range = 11
+ 
+ 
+ while (contador < range && contador > 0){
+     multiplicacao = entrada * contador
+     console.log(`Tabuada de ${entrada}: ${entrada} X ${contador} = ${multiplicacao}`)
+     contador++
+ }

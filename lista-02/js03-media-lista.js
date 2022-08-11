@@ -6,13 +6,14 @@
  * [1,1,40]             14.0
  */
 
-// Entrada
-var entrada = [1,1,40]
-
-var soma = 0
-
-// percorrer a lista e fazer a somatória dos elementos
-
-let media = 0
-
-console.log(media.toFixed(1))
+ let nummedia = [8,9,6,5]
+ let soma, media, contador = 0;
+     
+ 
+ for (var numero of nummedia){
+     soma += numero
+     contador++
+ }
+ media = soma/contador
+ console.log(`A média é: ${media.toFixed(1)}`)
+ 

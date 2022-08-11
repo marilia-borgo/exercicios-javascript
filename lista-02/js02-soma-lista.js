@@ -6,11 +6,11 @@
  * [1,1,40]             40
  */
 
-// Entrada
-var entrada = [1,3,5,7,8,10]
-
-var soma = 0
-
-// percorrer a lista e fazer a somatória dos elementos
-
-console.log(soma)
+ let numsoma = [90,89,6,23,56,87,98]
+ let soma = 0
+ 
+ for (var numero of numsoma){
+     soma += numero
+ }
+ 
+ console.log(`O resultado da soma é: ${soma}`)

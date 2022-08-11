@@ -11,10 +11,17 @@
  * Não usar funções built-ins da linguagem
  */
 
-// Entrada
-var entrada = [40,42,1,0,-10]
-
-var segundoMaior = 40
-
-
-console.log(segundoMaior)
+ let numeros = [349,89,900]
+ let maiorNumero = 0
+ let segundoMaiorNumero = 0
+ 
+ for (var numero of numeros){
+     if (numero > maiorNumero){
+         maiorNumero = numero
+     }
+     if (numero < maiorNumero && numero > segundoMaiorNumero){
+         segundoMaiorNumero = numero
+     }
+ }
+ 
+ console.log(segundoMaiorNumero)
