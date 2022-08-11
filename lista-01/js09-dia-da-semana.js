@@ -11,10 +11,29 @@
  * Se digitar outro valor deve aparecer: 'Entrada inválida.'
  */
 
-// Entrada
-var entrada = 1
-
-// implemente aqui o condicional para retornar o boolean (true/false) com base na entrada
-var resultado = 'Domingo'
-
-console.log(resultado)
+ let date = 4
+ switch (date) {
+     case 0:
+       day = "Domingo";
+       break;
+     case 1:
+       day = "Segunda";
+       break;
+     case 2:
+        day = "Terça";
+       break;
+     case 3:
+       day = "Quarta";
+       break;
+     case 4:
+       day = "Quinta";
+       break;
+     case 5:
+       day = "Sexta";
+       break;
+     case 6:
+       day = "Sábado";
+     default:
+         day = "invalido";
+   }
+   console.log(day)

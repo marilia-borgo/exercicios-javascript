@@ -7,10 +7,7 @@
  * 
  */
 
-// Entrada
-var entrada = 'abacate'
-
-// gere a variável invertido de forma a transforma a entrada na saída esperada
-var invertido = '?'
-
-console.log(invertido)
+ let text="roma"
+ let reverted = text.split("").reverse().join("");
+ console.log(reverted)
+ 

@@ -10,9 +10,10 @@
 */
 
 // Entrada
-var entrada = 'a'
 
-// implemente aqui o condicional para retornar o boolean (true/false) com base na entrada
-var resultado = 'vogal'
-
-console.log(resultado)
+let letra = 'A'
+if(letra.toLowerCase() == 'a' || entrada.toLowerCase() =='e' || entrada.toLowerCase()=='i'|| entrada.toLowerCase()=='o'|| entrada.toLowerCase()=='u'){
+    console.log('vogal')
+} else{
+    console.log('console')
+}

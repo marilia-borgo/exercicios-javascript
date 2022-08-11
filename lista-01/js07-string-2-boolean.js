@@ -13,10 +13,10 @@
  * qualquer outra coisa, $   false
  */
 
-// Entrada
-var entrada = 'J'
 
-// implemente aqui o condicional para retornar o boolean (true/false) com base na entrada
-var resultado = false
-
-console.log(resultado)
+ let entrada= "Y"
+ if(entrada.toLowerCase() =='y' || entrada.toLowerCase()=='yes'|| entrada.toLowerCase()=='sim'){
+     console.log('é valida')
+ } else{
+     console.log('não é valida')
+ }

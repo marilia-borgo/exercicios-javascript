@@ -8,10 +8,6 @@
  * 70                   21
  */
 
-// Entrada
-var fahrenheit = 89
-
-// Altere a expressão abaixo para converter Fahrenheit em Celsius
-var celsius = 32
-
-console.log(celsius)
+ cel=25
+ fahrenheit= (cel * 1.8) + 32
+ console.log(fahrenheit)

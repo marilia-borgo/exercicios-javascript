@@ -15,11 +15,12 @@
  * qual é o typeof(typeof A)
  */
 
-// Entrada
-var n1 = 'A'
-var n2 = 40
-
-// Saída
-var resultado = '?'
-
-console.log(resultado)
+ let n1='a'
+ let n2=5
+ if(typeof n1 == 'number' && typeof n2 == 'number'){
+     soma=n1+n2
+     console.log(soma)
+ } else{
+     console.log("entrada não valida")
+ }
+ 
