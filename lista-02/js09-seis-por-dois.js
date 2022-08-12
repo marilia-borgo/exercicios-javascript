@@ -8,7 +8,14 @@
  * 
  */
 
-// Entrada
-// Pŕoxima volta
+var diaDoMes = new Date().getDate();
+var mes = new Date().getUTCMonth();
+console.log(diaDoMes, mes)
+i = 1
 
-// Saída com base na próxima folga, calcular dia de trabalho/folga
+while (i < 90){
+    diaDoMes = diaDoMes + 6
+    console.log(diaDoMes+1, diaDoMes+2)
+    diaDoMes = diaDoMes + 2
+    i = i + 8
+}
