@@ -10,11 +10,24 @@
  * DICAS:
  * ao invés incrementar, vamos precisar decrementar...
  */
+var texto = "bcbdbuf";
 
-// Entrada
-var texto = 'bcbduf'
+var texto = '@fcsb'
+    contador = 0
+    criptografado= ''
 
-// implemente aqui uma lógica para descriptografar o texto
-var textoDecripto = 'abacate'
-
-console.log(textoDecripto)
+for (var indice in texto){
+    letraNumero = texto.charCodeAt(contador) -1
+    contador ++
+    
+    if (texto.charCodeAt(contador) == '@'){
+        criptografado += String.fromCharCode(123)
+    }
+    else if (texto.charCodeAt(contador) == '$'){
+        criptografado += String.fromCharCode(91)
+    }
+    else{
+        criptografado += String.fromCharCode(letraNumero)
+    }
+}
+console.log(criptografado)
