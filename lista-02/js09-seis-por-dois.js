@@ -8,14 +8,58 @@
  * 
  */
 
-var diaDoMes = new Date().getDate();
-var mes = new Date().getUTCMonth();
-console.log(diaDoMes, mes)
+var hoje = new Date().getDate();
+var mes = new Date().getUTCMonth()+1;
+console.log(`Hoje é dia ${hoje} do mes ${mes}`)
 i = 1
 
+
+
 while (i < 90){
-    diaDoMes = diaDoMes + 6
-    console.log(diaDoMes+1, diaDoMes+2)
-    diaDoMes = diaDoMes + 2
+    if (mes%2==0 && hoje>=30&& mes!=8 && mes!=2){
+    mes = mes+1
+    hoje = 1
+    hoje = hoje + 6
+    hoje > 31 ? null : console.log(`Sua folga será dia ${hoje+1} e dia ${hoje+2} do mês ${mes}`)
     i = i + 8
+    
+    }
+    
+
+    else if (mes%2!=0 && hoje>=31 && mes!=8 && mes!=2) {
+        mes = mes+1
+        hoje = 1
+        hoje = hoje + 6
+        hoje > 31 ? null : console.log(`Sua folga será dia ${hoje+1} e dia ${hoje+2} do mês ${mes}`)
+        i = i + 8
+        
+
+    }
+
+    else if (hoje>=31  && mes==8 ){
+        mes = mes+1
+        hoje = 1
+        hoje = hoje + 6
+        hoje > 31 ? null : console.log(`Sua folga será dia ${hoje+1} e dia ${hoje+2} do mês ${mes}`)
+        i = i + 8
+       
+
+    }
+    else if (hoje>=28 && mes==2 ){
+        mes = mes+1
+        hoje = 1
+        hoje = hoje + 6
+        hoje > 31 ? null : console.log(`Sua folga será dia ${hoje+1} e dia ${hoje+2} do mês ${mes}`)
+        i = i + 8
+        
+
+    }
+    else {
+        hoje = hoje + 6
+        hoje > 31 ? null : console.log(`Sua folga será dia ${hoje+1} e dia ${hoje+2} do mês ${mes}`)
+        i = i + 8
+        
+    }
+
 }
+
